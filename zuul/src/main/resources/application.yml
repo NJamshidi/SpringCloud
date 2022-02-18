@@ -1,0 +1,19 @@
+server:
+  port: 9000
+
+zuul:
+  routes:
+    account:
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 11000
+
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
